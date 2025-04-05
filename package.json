@@ -1,0 +1,41 @@
+{
+  "name": "mjolnir",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsx script/build.ts",
+    "capture": "tsx script/capture.ts",
+    "dev": "tsx script/dev.ts",
+    "start": "tsx script/build.ts && npx serve -s dist"
+  },
+  "dependencies": {
+    "@cmdcode/buff": "^2.2.5",
+    "@noble/curves": "^1.8.1",
+    "@noble/hashes": "^1.7.1",
+    "idb": "^8.0.2",
+    "nostr-tools": "^2.10.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swr": "^2.3.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/ws": "^8.18.1",
+    "chokidar": "^4.0.3",
+    "concat": "^1.0.3",
+    "esbuild": "^0.25.2",
+    "ngrok": "^5.0.0-beta.2",
+    "puppeteer": "^24.6.0",
+    "qrcode": "^1.5.4",
+    "serve": "^14.2.4",
+    "tsx": "^4.19.3",
+    "typescript": "~5.7.2",
+    "workbox-window": "^7.3.0",
+    "ws": "^8.18.1"
+  }
+}

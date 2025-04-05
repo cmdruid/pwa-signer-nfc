@@ -1,0 +1,199 @@
+.settings-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-section {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.settings-section h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.setting-item {
+  margin-bottom: 16px;
+}
+
+.setting-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+.setting-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.setting-input-group input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.setting-input-group input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.setting-input-group button,
+.remove-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.setting-input-group button:hover:not(:disabled),
+.remove-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.setting-input-group button:disabled,
+.remove-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.remove-button {
+  background-color: #dc3545;
+}
+
+.remove-button:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.relay-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.relay-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.relay-item span {
+  font-family: monospace;
+  color: #666;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.loading-indicator {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add some responsive styles */
+@media (max-width: 600px) {
+  .settings-form-container {
+    padding: 10px;
+  }
+  
+  .setting-input-group {
+    flex-direction: column;
+  }
+  
+  .setting-input-group button,
+  .remove-button {
+    width: 100%;
+  }
+}
+
+.add-setting-form {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.add-setting-form .setting-input-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-setting-form input {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-setting-form button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-setting-form button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.add-setting-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+} 

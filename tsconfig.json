@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "esnext", "webworker"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": ["src"]
+}
